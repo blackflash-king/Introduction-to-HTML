@@ -1,0 +1,40 @@
+body {
+    background-color: cyan;
+    background-image: linear-gradient(to right, #00ffff, #232797);
+    font-family: Arial, sans-serif;
+       }
+
+.page-header {
+    background-image:linear-gradient(to right, #a2ff00, #2397577c);
+    border-radius: 16px; /*creates rounded corners*/
+    text-align: center;
+    color: white;
+}
+
+.fact-card {
+    background-color:rgba(255, 255, 0, 0.712);
+    border-radius: 12px; /*creates rounded corners*/
+    color:white;    
+}
+
+.star {
+    width: 60px;
+    height: 60px;
+    color: yellow;
+    border-radius: 50px; /*turns the square into a circle*/
+    animation: JJS 2s infinite alternate;/*repeat the animation;play it forwards and backwards*/
+}
+
+@keyframes JJS {
+    from {
+        background-color: rgba(255, 119, 0, 0.949);
+    }
+    to {
+        background-color: rgba(255, 8, 0, 0.949);
+    }
+}
+
+.footer-text {
+    text-align: center;
+    color: coral;
+}
