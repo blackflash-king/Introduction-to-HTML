@@ -22,7 +22,40 @@
             color:skyblue;
             display:inline-block;
         }
-    </style>
+
+     /*Child Selector-styles only direct li children of ul*/
+     ul>li {
+        list-style: none;
+        font-size:25px;
+        font-weight:bold;
+        color:darkgreen;
+        padding:10px 20px;
+        margin: auto;
+        width:260px;background:lightgreen;
+        border-radius: 8px;
+        }
+      
+        /*nth-child-highlights the third item as chef's special*/
+        ul li:nth-child(3) {
+            background:peachpuff;
+            color:white;
+        }
+
+        a {
+            color:darkorange;
+            text-decoration:none;
+            font-size:15px;
+            margin:0 12px;
+            padding:8px 18px;
+            border:2px solid darkorange;
+            border-radius:8px;
+        }
+
+        a:hover {
+            background:blue;
+            color:white;
+        }
+     </style>
 </head>
     <body>
 
@@ -33,7 +66,8 @@
         <ul>
             <li>Fried chicken</li>
             <li>Onigiri</li>
-            <li>Pizza</li>
+            <li>Pizza-
+                Chef's Special</li>
             <li>Spaghetti</li>
             <li>Salad</li>
         </ul>
