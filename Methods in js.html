@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Javascript string methods</h1>
+<p>Basic methods</p>
+<script>
+var str = "BlAcKfLaSh";
+document.write(str.toUpperCase());
+document.write("<br>");
+document.write(str.toLowerCase());
+document.write("<br>");
+document.write(str.startsWith("i"));
+document.write("<br>");
+
+var str1 = "Vessel mains spam blackflash chain";
+var patt = new RegExp("Vessel");
+var res = patt.test(str);
+document.write(res)
+</script>
+</body>
+</html>
