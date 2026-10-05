@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More on classes in Javascript</title>
+    </head>
+    <body>
+        <h1>Javascript class</h1>
+        <p id="car1"></p>
+        <script>
+            class car1{
+                constructor(brand){
+                    this.carname = brand
+                    }
+                
+                    present(){
+                        return "I have a" + this.carname
+                    }
+                    
+            }
+            let mycar = new car1("Toyota")
+
+            document.getElementById("car1").innerHTML = mycar.present()
+        </script>
+    </body>
+</html>
