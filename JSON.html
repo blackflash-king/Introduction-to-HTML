@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Take a Javascript into a JSON string, and send it to the server</h1>
+    <p id='result'></p>
+    <p id='age'></p>
+    <p id='year'></p>
+    <script>
+        var myOBj = { name: "David", age: 11, year: 7 }
+        var myJSON = JSON.stringify(myOBj);
+        var newOBj = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = newOBj.name;
+        document.getElementById("age").innerHTML = newOBj.age;
+        document.getElementById("year").innerHTML = newOBj.year;
+    </script>
+</body>
+
+</html>
