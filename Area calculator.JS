@@ -20,6 +20,13 @@ if (choice == "3"){
     alert("The area is " + result)
 }
 
+if (choice == "4"){
+    var h = prompt("Enter the height")
+    var cb = prompt("Enter the corresponding base")
+    var result = Number(h) * Number(cb)
+    alert("The area is " + result)
+}
+
 
 
 
