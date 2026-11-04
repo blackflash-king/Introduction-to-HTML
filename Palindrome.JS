@@ -12,3 +12,4 @@ function palindrome(myString){
 }
 
 palindrome("racecar")
+palindrome("Sight")
