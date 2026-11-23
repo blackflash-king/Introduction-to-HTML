@@ -4,7 +4,7 @@ window.onload = function() {
     var appendmilliseconds = document.getElementById("milliseconds");
     var  appendseconds = document.getElementById("seconds");
     var buttonStart = document.getElementById("button-start");
-    var buttonStop = document.getElementById("button-Stop");
+    var buttonStop = document.getElementById("button-stop");
     var buttonReset = document.getElementById("button-reset");
     var Interval;
 
@@ -33,12 +33,12 @@ window.onload = function() {
     }
 
         if(milliseconds > 9){
-            appendmilliseconds.innerHTMl = "0" + milliseconds;
+            appendmilliseconds.innerHTML =  milliseconds;
         }
 
         if(milliseconds > 99){
             seconds++;
-            appendseconds.innerHTML = "0" + milliseconds
+            appendseconds.innerHTML = "0" + seconds
             milliseconds = 0;
             appendmilliseconds.innerHTML = "0" + 0;
         }
