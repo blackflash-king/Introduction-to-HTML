@@ -4,5 +4,25 @@ var stopped = true;
 var t;
 
 function change() {
-    var random
+    var random = Math.floor(Math.random() * 6);
+    dice.innerHTML = dices[random];
 }
+
+function stopStart() {
+    if (stopped) {
+        stopped = false;
+        t = setInterval(change, 100);
+    } else {
+        clearInterval(t);
+        stopped = true;
+    }
+
+}
+
+window.onload = function () {
+    dice = document.getElementById("dice");
+    stopStart();
+}
+
+
+

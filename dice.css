@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    font-family: Helvetica, Sans-serif;
+    background-color: rgb(251, 0, 255);
+}
+
+#dice {
+    font-size: 320px;
+    color: rgb(8, 0, 255);
+}
+
+#dice:hover {
+    cursor: pointer;
+}
